@@ -63,7 +63,7 @@ class Compute
     {
        long min=a[0];
        long max=a[0];
-       for(int i=0;i<a.length;i++)
+      /* for(int i=0;i<a.length;i++)
        {
            if(a[i]<max)
            {
@@ -73,15 +73,15 @@ class Compute
            {
                min=a[i];
            }
-       }
+       }*/
        
-      /* for(int i=0;i<a.length;i++)
+       for(int i=0;i<a.length;i++)
        {
            min=Math.min(a[i],min);
            max=Math.max(a[i],max);
        }
-       */
-       return new pair(max,min);
+       
+       return new pair(min,max);
        
     }
 }
