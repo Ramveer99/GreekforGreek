@@ -61,27 +61,16 @@ class Compute
 {
     static pair getMinMax(long a[], long n)  
     {
-       long min=a[0];
-       long max=a[0];
-      /* for(int i=0;i<a.length;i++)
-       {
-           if(a[i]<max)
-           {
-               max=a[i];
-           }
-           else if(a[i]>min)
-           {
-               min=a[i];
-           }
-       }*/
-       
-       for(int i=0;i<a.length;i++)
-       {
-           min=Math.min(a[i],min);
-           max=Math.max(a[i],max);
-       }
-       
-       return new pair(min,max);
-       
+        //Write your code here
+        long min=Integer.MAX_VALUE;
+        long max=Integer.MIN_VALUE;
+        
+        for(int i=0;i<n;i++)
+        {
+            min=Math.min(min,a[i]);
+            max=Math.max(max,a[i]);
+        }
+        
+        return new pair(min,max);
     }
 }
