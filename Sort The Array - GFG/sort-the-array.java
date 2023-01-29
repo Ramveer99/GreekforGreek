@@ -35,7 +35,9 @@ class Solution
 { 
     int[] sortArr(int[] arr, int n) 
     { 
-      Arrays.sort(arr);
-       return arr;
+        // code here
+        Arrays.sort(arr);
+        
+        return arr;
     }
 } 
