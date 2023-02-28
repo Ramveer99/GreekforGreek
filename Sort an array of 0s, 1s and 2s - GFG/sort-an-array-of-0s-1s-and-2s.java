@@ -14,6 +14,7 @@ class Solution
     {
         // code here 
         Arrays.sort(a);
+        
     }
 }
 
