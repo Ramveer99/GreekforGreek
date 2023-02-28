@@ -57,15 +57,16 @@ class GFG {
 
 class Solution{
     int findFrequency(int A[], int x)
-    { 
-        int count=0;
+    {
+        int pointer=0;
         for(int i=0;i<A.length;i++)
         {
             if(A[i]==x)
             {
-                count++;
+                pointer++;
             }
         }
-         return count;
+        return pointer;
+        
     }
 }
