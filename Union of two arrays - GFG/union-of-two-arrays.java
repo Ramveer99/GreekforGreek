@@ -54,25 +54,17 @@ class Solution{
     public static int doUnion(int a[], int n, int b[], int m) 
     {
         //Your code here
-        Set<Integer> s = new HashSet<Integer>();
- 
-        //  Insert the elements of arr1[] to set s
-        for (int i = 0; i < n; i++) {
-            s.add(a[i]);
-        }
- 
-        //  Insert the elements of arr2[] to set s
-        for (int i = 0; i < m; i++) {
-            s.add(b[i]);
-        }
- 
-       
-        for (int j=0;j<(n+m);j++)
-            // s will contain only distinct
-            // elements from array a and b
-            return s.size();
-      return 0;
+        HashSet<Integer> set=new HashSet<>();
         
+        for(int i: a)
+        {
+            set.add(i);
+        }
+        
+        for(int i: b)
+        {
+            set.add(i);
+        }
+        return set.size();
     }
-   
 }
