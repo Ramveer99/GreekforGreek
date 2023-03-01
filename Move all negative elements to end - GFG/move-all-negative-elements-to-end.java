@@ -42,9 +42,8 @@ class Solution {
     public void segregateElements(int arr[], int n)
     {
         // Your code goes here
-        
-        ArrayList<Integer> positive=new ArrayList<>();
-        ArrayList<Integer> negative=new ArrayList<>();
+        ArrayList<Integer> positive =new ArrayList<>();
+        ArrayList<Integer> negative =new ArrayList<>();
         
         for(int i=0;i<arr.length;i++)
         {
@@ -60,11 +59,9 @@ class Solution {
         
         positive.addAll(negative);
         
-        int index=0;
-        
-        for(int i : positive)
+        for(int i=0;i<n;i++)
         {
-            arr[index++]=i;
+            arr[i]=positive.get(i);
         }
     }
 }
