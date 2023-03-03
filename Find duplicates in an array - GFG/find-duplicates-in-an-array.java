@@ -32,11 +32,11 @@ class Solution {
         
         for(int i=0;i<n-1;i++)
         {
-            int s=arr[i];
+         
             
-            if(s==arr[i+1])
+            if(arr[i]==arr[i+1])
             {
-                set.add(s);
+                set.add(arr[i]);
                 continue;
             }
         }
